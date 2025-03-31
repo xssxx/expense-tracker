@@ -5,6 +5,7 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"time"
 
 	"github.com/xssxx/expense-tracker/models"
 )
@@ -35,7 +36,7 @@ func (f *FileDataSource) ReadFile() []models.Expense {
 	for scanner.Scan() {
 		line := scanner.Text()
 		parts := strings.Split(line, ",")
-		if len(parts) < 4 {
+		if len(parts) < 5 {
 			continue
 		}
 
@@ -49,11 +50,17 @@ func (f *FileDataSource) ReadFile() []models.Expense {
 			continue
 		}
 
+		createdAt, err := time.Parse(time.RFC3339, parts[4])
+		if err != nil {
+			continue
+		}
+
 		expense := models.Expense{
 			ID:          id,
 			Amount:      amount,
 			Description: parts[2],
 			Category:    parts[3],
+			CreatedAt:   createdAt,
 		}
 
 		expenses = append(expenses, expense)
@@ -79,7 +86,8 @@ func (f *FileDataSource) WriteFile(expenses []models.Expense) error {
 		line := strconv.Itoa(expense.ID) + "," +
 			strconv.FormatFloat(expense.Amount, 'f', 2, 64) + "," +
 			expense.Description + "," +
-			expense.Category + "\n"
+			expense.Category + "," +
+			expense.CreatedAt.Format(time.RFC3339) + "\n"
 		_, err := writer.WriteString(line)
 		if err != nil {
 			return err

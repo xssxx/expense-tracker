@@ -20,5 +20,6 @@ func ListExpense() {
 		fmt.Printf("Amount: %.2f\n", expense.Amount)
 		fmt.Println("Description:", expense.Description)
 		fmt.Println("Category:", expense.Category)
+		fmt.Println("Created At:", expense.CreatedAt.Format("02/01/2006 15:04"))
 	}
 }

@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	"time"
 
 	"github.com/xssxx/expense-tracker/models"
 	"github.com/xssxx/expense-tracker/services"
@@ -32,6 +33,7 @@ func AddExpense(args []string) {
 		Amount:      *amount,
 		Description: *description,
 		Category:    *category,
+		CreatedAt:   time.Now(),
 	}
 	expenses = append(expenses, expense)
 
