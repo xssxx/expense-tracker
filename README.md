@@ -11,7 +11,7 @@ A simple command-line expense tracker that stores data in the filesystem.
 - ✅ **Delete an expense** by ID.
 - ✅ **View all expenses** in a list format.
 - ✅ **View a summary** of all expenses (💵 Total amount spent).
-- ✅ **View a summary for a specific month** (🚧 Not yet implemented).
+- ✅ **View a summary for a specific month**.
 
 ---
 
