@@ -44,6 +44,3 @@ https://roadmap.sh/projects/expense-tracker
 ```sh
 ./bin/expense-tracker delete --id 1
 ```
-
-![image](https://github.com/user-attachments/assets/d6fad7dc-a0e6-4ec1-9db3-926dd50c5188)
-
