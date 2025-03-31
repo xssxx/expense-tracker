@@ -41,6 +41,12 @@ A simple command-line expense tracker that stores data in the filesystem.
 ./bin/expense-tracker summary
 ```
 
+### 📊 **Summary Total Expenses by Month**
+
+```sh
+./bin/expense-tracker summary --month=3
+```
+
 ### 🗑️ **Delete an Expense**
 
 ```sh
