@@ -21,7 +21,7 @@ func main() {
 	case "delete":
 		commands.DeleteExpense(os.Args[2:])
 	case "summary":
-		commands.SummaryExpense()
+		commands.SummaryExpense(os.Args[2:])
 	default:
 		fmt.Println("Invalid command. Use 'add' to add an expense.")
 		os.Exit(1)

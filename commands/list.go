@@ -14,7 +14,7 @@ func ListExpense() {
 		return
 	}
 
-	println("Expenses:")
+	fmt.Println("Expenses:")
 	for _, expense := range expenses {
 		fmt.Println("ID:", expense.ID)
 		fmt.Printf("Amount: %.2f\n", expense.Amount)

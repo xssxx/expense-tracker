@@ -1,22 +1,23 @@
-# 💰 **Expense Tracker**  
-A simple command-line expense tracker that stores data in the filesystem.  
+# 💰 **Expense Tracker**
 
-## 🚀 **Features**  
+A simple command-line expense tracker that stores data in the filesystem.
 
-🔗 [Project Roadmap](https://roadmap.sh/projects/expense-tracker)  
+## 🚀 **Features**
 
-- ✅ **Add an expense** ➝ Description, amount, and category.  
-- ❌ **Update an expense** (🚧 Not yet implemented).  
-- ✅ **Delete an expense** by ID.  
-- ✅ **View all expenses** in a list format.  
-- ✅ **View a summary** of all expenses (💵 Total amount spent).  
-- ❌ **View a summary for a specific month** (🚧 Not yet implemented).  
+🔗 [Project Roadmap](https://roadmap.sh/projects/expense-tracker)
+
+- ✅ **Add an expense** ➝ Description, amount, and category.
+- ❌ **Update an expense** (🚧 Not yet implemented).
+- ✅ **Delete an expense** by ID.
+- ✅ **View all expenses** in a list format.
+- ✅ **View a summary** of all expenses (💵 Total amount spent).
+- ✅ **View a summary for a specific month** (🚧 Not yet implemented).
 
 ---
 
-## ⚙️ **Usage**  
+## ⚙️ **Usage**
 
-### 🔨 **Build the Program**  
+### 🔨 **Build the Program**
 
 ```sh
 ./build.sh
